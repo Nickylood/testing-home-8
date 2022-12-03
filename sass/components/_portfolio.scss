@@ -1,0 +1,98 @@
+.section-portfolio__link {
+    display: block;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+    box-shadow: var(--shadow-nain);
+    }
+
+    &:focus .section-portfolio__overflow {
+        transform: translateY(0);
+    }
+}
+
+
+
+.section-portfolio__image {
+    display: block;
+}
+.project-container {
+    display: inline-block;
+    display: flex;
+}
+.section-portfolio__project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    gap: 30px;
+    
+}
+/* text pisition contents "9" */
+.section-portfolio__thumb {
+    position: relative;
+    overflow: hidden;
+}
+.section-portfolio__overflow {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(101%);
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--overflow-color);
+    transition: transform var(--transfor-ms)
+}
+.section-portfolio__text {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    
+    letter-spacing: 0.03em;
+    color: var(--before-color);
+}
+.section-portfolio__photo:hover .section-portfolio__overflow {
+    transform: translateY(0);
+}
+.section-portfolio__data {
+    padding: 20px 24px;
+    border-left: 1px solid var(--portfolio-border);
+    border-right: 1px solid var(--portfolio-border);
+    border-bottom: 1px solid var(--portfolio-border);
+
+}
+.project-title {
+    display: block;
+}
+.section-portfolio__first {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+.section-portfolio__second {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+.button-container {
+    display: block;
+    display: flex;
+}
