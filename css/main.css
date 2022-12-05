@@ -626,7 +626,7 @@ textarea::placeholder {
   margin-right: 30px;
 }
 
-.section-page__seconds {
+.section-page__second {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
