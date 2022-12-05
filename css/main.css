@@ -95,7 +95,6 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   /* outline: 1px solid tomato; */
 }
 @media screen and (min-width: 480px) {
@@ -608,12 +607,6 @@ textarea::placeholder {
   margin-bottom: 30px;
   background: var(--services-color);
   border-radius: 4px;
-}
-
-.section-page__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .section-page__first {
