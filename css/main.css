@@ -593,7 +593,7 @@ textarea::placeholder {
 }
 
 .section-page__icons {
-  width: 270px;
+  width: 450px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,27 +608,64 @@ textarea::placeholder {
   background: var(--services-color);
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) {
+  .section-page__icons {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-page__icons {
+    width: 270px;
+  }
+}
 
 .section-page__first {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-page__first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-page__first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.section-page__second:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .section-page__second {
+    width: calc((100% - 30px) / 2);
+  }
 }
-
-.section-page__second {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+@media screen and (min-width: 1200px) {
+  .section-page__second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .section-page__second:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-page__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -643,6 +680,11 @@ textarea::placeholder {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+@media screen and (max-width: 767px) {
+  .section-page__text {
+    margin-bottom: 30px;
+  }
 }
 
 .section-work {
