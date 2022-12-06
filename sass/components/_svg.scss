@@ -1,8 +1,13 @@
 .section-client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--before-color);
     
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+  
 }
 
 .section-clients__clients {
@@ -18,30 +23,66 @@
 }
 .section-clients__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
 }
 .section-clients__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
     outline: none;
+    
 
     border: 1px solid var(--clients-icon);
     border-radius: 4px;
     color: var(--clients-icon);
 
-    transition-property: color, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+        
+    }
 
-    &:hover,
-    &:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+
+        transition-property: color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+        }
     }
 }
 

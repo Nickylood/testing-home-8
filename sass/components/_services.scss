@@ -1,7 +1,12 @@
 .section-services {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--services-color);
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section-services__work {
@@ -19,8 +24,24 @@
 }
 .section-services__before {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
 }
 
 
