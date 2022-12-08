@@ -11,45 +11,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
-
+  
   <body>
     <!-- шапка страницы -->
 
     <header class="header">
-      <div class="header__container container">
-        <a class="header__logo logo" href="./index.html"><span class="header__web">Web</span>Studio</a>
-        <!-- навигация на другие страницы -->
-      <nav class="nav">
+      
+      <!-- logo -->
+    <div class="header__container container">
+      <a class="header__logo logo" href="./index.html"><span class="header__web">Web</span>Studio</a>
 
+      <button type="button" class="menu-burger is-open" aria-controls="menu-mobail" data-menu-button>
+        <svg class="crosi" width="40" height="40" aria-label="переключатель мобильного меню">
+          <use class="icon-cross" href="./images/sprite.svg#mobils"></use>
+          <use class="icon-minmenu" href="./images/sprite.svg#closemob"></use>
+        </svg>
+      </button>
+      <div class="menu-mobail" id="menu-mobail" data-menu>
+        <div class="navigations">
+        <nav class="nav">
 
-
-        <ul class="nav__list list">
-          <li class="nav__item"><a href="./index.html" class="nav__link link">Студія</a></li>
+          <ul class="nav__list list">
+            <li class="nav__item"><a href="./index.html" class="nav__link link">Студія</a></li>
           <li class="nav__item">
             <a href="./portfolio.html" class="nav__link current link"><span class="portfolio">Портфоліо</span></a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link link">Контакти</a></li>
-        </ul>
-      </nav>
-
-      <ul class="two__list list">
-        <li class="two__item">
-          <a class="two__link link" href="mailto:info@devstudio.com">
-            <svg class="two__envelope" width="16" height="12">
-            <use xlink:href="./images/sprite.svg#envelope">
-            </use>
-          </svg>info@devstudio.com</a>
-        </li>
-        <li class="two__item">
-          <a class="two__links link" href="tel:+380961111111">
-            <svg class="two__vector" width="10" height="16">
-            <use xlink:href="./images/sprite.svg#vector">
-            </use>
-          </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
+            <li class="nav__item"><a href="#" class="nav__link link">Контакти</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
+      <div class="contacts">
+        <ul class="two__list list">
+          <li class="two__item">
+            <a class="two__link link" href="mailto:info@devstudio.com">
+              <svg class="two__envelope" width="16" height="12">
+              <use xlink:href="./images/sprite.svg#envelope">
+              </use>
+            </svg>info@devstudio.com</a>
+          </li>
+          <li class="two__item">
+            <a class="two__links link" href="tel:+380961111111">
+              <svg class="two__vector" width="10" height="16">
+              <use xlink:href="./images/sprite.svg#vector">
+              </use>
+            </svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <div class="application">
+          <a class="application-item link" href="">Instagram</a>
+          <a class="application-item link" href="">Twitter</a>
+          <a class="application-item link" href="">Facebook</a>
+          <a class="application-item link" href="">LinkedIn</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+</header>
     <main>
       <section class="section-portfolio">
         <div class="container">
@@ -205,68 +223,75 @@
     <footer class="section-footer">
       <div class="container">
         <div class="section-footer__joins">
-          <div class="section-footer__secondjoins">
-         <a class="section-footer__logotype" href="./index.html"><span class="header__web">Web</span>Studio</a>
-      <address class="section-footer__address">
-        <ul class="section-footer__before list">
-          <li class="section-footer__item"><a class="section-footer__map link" href="https://goo.gl/maps/Yp1MJyX35UvS2NjQA" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li class="section-footer__item">
-            <a class="section-footer__link link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="section-footer__item">
-            <a class="section-footer__link link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-      </div>
-      <div class="section-footer__go">
-        <h2 class="section-footer__ap">приєднуйтесь</h2>
-        <ul class="section-footer__application">
-          <li class="section-footer__people">
-            <a href="" class="section-footer__serv">
-              <svg class="section-footer__icons" width="20" height="20">
-                <use href="./images/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-footer__people">
-            <a href="" class="section-footer__serv">
-              <svg class="section-footer__icons" width="20" height="20">
-                <use href="./images/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-footer__people">
-            <a href="" class="section-footer__serv">
-              <svg class="section-footer__icons" width="20" height="20">
-                <use href="./images/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-footer__people">
-            <a href="" class="section-footer__serv">
-              <svg class="section-footer__icons" width="20" height="20">
-                <use href="./images/sprite.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+     <div class="divase">
+      <div class="section-footer__secondjoins">
+        <a class="section-footer__logotype" href="./index.html"><span class="header__web">Web</span>Studio</a>
+     <address class="section-footer__address">
+       <ul class="section-footer__before list">
+         <li class="section-footer__item"><a class="section-footer__map link" href="https://goo.gl/maps/Yp1MJyX35UvS2NjQA" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
+         <li class="section-footer__item">
+           <a class="section-footer__link link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
+         </li>
+         <li class="section-footer__item">
+           <a class="section-footer__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+         </li>
+       </ul>
+     </address>
+     </div>
+     <div class="section-footer__go">
+       <h2 class="section-footer__ap">приєднуйтесь</h2>
+       <ul class="section-footer__application">
+         <li class="section-footer__people">
+           <a href="" class="section-footer__serv">
+             <svg class="section-footer__icons" width="20" height="20">
+               <use href="./images/sprite.svg#instagram"></use>
+             </svg>
+           </a>
+         </li>
+         <li class="section-footer__people">
+           <a href="" class="section-footer__serv">
+             <svg class="section-footer__icons" width="20" height="20">
+               <use href="./images/sprite.svg#twitter"></use>
+             </svg>
+           </a>
+         </li>
+         <li class="section-footer__people">
+           <a href="" class="section-footer__serv">
+             <svg class="section-footer__icons" width="20" height="20">
+               <use href="./images/sprite.svg#facebook"></use>
+             </svg>
+           </a>
+         </li>
+         <li class="section-footer__people">
+           <a href="" class="section-footer__serv">
+             <svg class="section-footer__icons" width="20" height="20">
+               <use href="./images/sprite.svg#linkedin"></use>
+             </svg>
+           </a>
+         </li>
+       </ul>
+     </div>
+     </div>
       <div class="last-footer">
         <p class="last-footer__text">Підпишіться на розсилку</p>
-        <form>
-          <label class="last-footer__label">
-            <input class="last-footer__email" type="text" name="mail-footer" placeholder="E-mail">
+        <form class="others">
+            <div class="last-footer__inputs">
+              <label class="last-footer__label">
+              <input class="last-footer__email" type="text" name="mail-footer" placeholder="E-mail">
           </label>
-            <button class="last-footer__mail" type="submit"><span class="last-footer__btns">Підписатися</span>
-              <svg class="last-footer__send" width="24" height="24">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
+            </div>
+              <div class="last-footer__other">
+                <button class="last-footer__mail" type="submit"><span class="last-footer__btns">Підписатися</span>
+                  <svg class="last-footer__send" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
         </form>
       </div>
       </div>
       </div>
     </footer>
+    <script src="./js/modals.js"></script>
   </body>
 </html>
