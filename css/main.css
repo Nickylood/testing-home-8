@@ -105,7 +105,7 @@ img {
 }
 @media screen and (min-width: 320px) {
   .container .container {
-    max-width: none;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -197,14 +197,12 @@ img {
     display: none;
     position: fixed;
     position: absolute;
-    z-index: 100;
+    z-index: 90;
     overflow-y: scroll;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 8px;
+    padding: 40px 48px;
     width: 100%;
     height: 796px;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: white;
@@ -286,6 +284,7 @@ img {
 
 .crosi {
   padding: 10px;
+  z-index: 100;
 }
 
 @media screen and (max-width: 767px) {
@@ -2563,6 +2562,22 @@ section-footer__go {
   }
 }
 
+@media screen and (max-width: 481px) {
+  .last-footer {
+    display: block;
+    padding: 15px 16px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .last-footer {
+    width: 100%;
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .last-footer {
     text-align: left;
@@ -2589,7 +2604,6 @@ section-footer__go {
 
 .last-footer__email {
   padding-left: 16px;
-  width: 450px;
   height: 50px;
   background: var(--h1-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -2598,9 +2612,17 @@ section-footer__go {
   border-radius: 4px;
   color: var(--before-color);
 }
+@media screen and (max-width: 480px) {
+  .last-footer__email {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 @media screen and (max-width: 1199px) {
   .last-footer__email {
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {

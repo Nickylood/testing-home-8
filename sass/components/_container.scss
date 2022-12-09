@@ -6,7 +6,7 @@
     /* outline: 1px solid tomato; */
     @media screen and (min-width: 320px) {
         .container {
-            max-width: none;
+            min-width: 480px;
         }
     }
     @media screen and (min-width: 768px) {
