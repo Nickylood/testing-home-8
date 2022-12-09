@@ -29,6 +29,12 @@
 }
 .section-page__first {
     display: block;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
@@ -41,6 +47,8 @@
     
 }
 .section-page__second {
+    
+
     @media screen and (min-width: 768px) {
         width: calc((100% - 2 * 15px) / 2);
     }
@@ -56,8 +64,12 @@
     
 }
 .section-page__title {
-    display: flex;
-    justify-content: center;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -76,9 +88,6 @@
     color: var(--text-color);
 
 
-    @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-        
-    }
+    
 }
 
