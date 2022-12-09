@@ -9,8 +9,8 @@
     
 }
 .section-page__icons {
-    width: 450px;
     height: 120px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,12 @@
 
     @media screen and (min-width: 768px) {
         width: 354px;
+        height: 120px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 270px;
+        height: 120px;
     }
 }
 .section-page__first {
