@@ -30,10 +30,11 @@
 
     @media screen and (max-width: 767px) {
         display: none;
+        position: fixed;
         position: absolute;
-
-        padding-left: 40px;
-        padding-right: 40px;
+        z-index: 100;
+        overflow-y: scroll;
+        padding: 48px 40px;
         width: 100%;
         height: 796px;
         top: 100%;
@@ -73,18 +74,21 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    
 
     @media screen and (min-width: 768px) {
         display: flex;
         text-align: center;
         align-items: center;
+        border-bottom: 1px solid var(--clients-icon);
+
     }
 
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
+        border-bottom: 1px solid var(--clients-icon);
+        
     }
 }
 .crosi {
@@ -102,7 +106,7 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        padding-bottom: 306px;
+        padding-bottom: 139px;
 
     }
 

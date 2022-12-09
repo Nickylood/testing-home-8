@@ -8,27 +8,101 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-        ),
-    url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url("../images/mobail-sm/Header imglogo-sm-480.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url("../images/mobail-sm/Header imglogo-sm-960.jpg");
+    }
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+        url("../images/tablet-md/Header imglogo-md-768.jpg");
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+        url("../images/tablet-md/Header imglogo-md-1536.jpg");
+        }
+        @media screen and (min-width: 1024px) {
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ),
+            url("../images/desktop-bg/logo-bg_1600.jpg");
+        
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ),
+            url("../images/desktop-bg/Iogo-bg_3200.jpg");
+            }
+    }
 }
 
 .hero-baner__title {
-    width: 800px;
-    height: 120px;
-    margin-right: auto;
-    margin-left: auto;
-
-    margin-bottom: 30px;
+    font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    letter-spacing: 0.06em;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: .06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
     color: var(--before-color);
+
+    @media screen and (min-width: 768px) {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        color: var(--before-color);
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 800px;
+        height: 120px;
+        margin-right: auto;
+        margin-left: auto;
+
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--before-color);
+    }
 }
+
+
+    

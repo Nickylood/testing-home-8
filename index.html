@@ -170,7 +170,12 @@
         <ul class="section-work__img list">
           <li class="section-work__items">
             <div class="section-work__wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="./images/desktop-bg/img1bg_370.jpg 1x, ./images/desktop-bg/img1bg_740.jpg 2x">
+
             <img class="section-work__about" src="./images/img(1).jpg" alt="стiл розробника" width="370">
+          </picture>
             <div class="section-work__overlay">
               <p class="section-work__overlays">Десктопні додатки</p>
             </div>
@@ -178,7 +183,12 @@
           </li>
           <li class="section-work__items">
             <div class="section-work__wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="./images/desktop-bg/img2bg-370.jpg 1x, ./images/desktop-bg/img2bg-740.jpg 2x">
+
             <img class="section-work__about" src="./images/img(2).jpg" alt="стiл розробника додатку до смартфонiв" width="370">
+          </picture>
             <div class="section-work__overlay">
               <p class="section-work__overlays">Мобільні додатки</p>
             </div>
@@ -186,7 +196,12 @@
           </li>
           <li class="section-work__items">
             <div class="section-work__wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="./images/desktop-bg/img3bg-370.jpg 1x, ./images/desktop-bg/img3bg-740.jpg 2x">
+
             <img class="section-work__about" src="./images/img(3).jpg" alt="стiл дизайнера кольору" width="370">
+            </picture>
             <div class="section-work__overlay">
               <p class="section-work__overlays">Дизайнерські рішення</p>
             </div>
@@ -200,7 +215,18 @@
         <h2 class="section-services__work">Наша команда</h2>
         <ul class="section-services__before list">
           <li class="section-services__cover">
-            <img class="section-services__img" src="./images/Product_designer.jpg" alt="Product-designer" width="270">
+            <picture>
+              <source media="(max-width: 767px)"
+              srcset="./images/mobail-sm/imgigor-sm_450.jpg 1x, ./images/mobail-sm/imgigor-sm_450.jpg 2x">
+              <source media="(min-width: 768px) and (max-width: 1199px)"
+              srcset="./images/tablet-md/imgigor-md-354.jpg 1x, ./images/tablet-md/imgigor-md-354.jpg 2x">
+              <source media="(min-width: 1200px)"
+              srcset="./images/desktop-bg/kris-bg_270.jpg 1x, ./images/desktop-bg/kris-bg_270.jpg 2x">
+
+              <img class="section-services__img" 
+              src="./images/Product_designer.jpg" 
+              alt="Product-designer" width="270"
+            </picture>
             <div class="section-services__document">
             <h3 class="section-services__title">Ігор Дем'яненко</h3>
             <p class="section-services__text">Product Designer</p>
@@ -237,7 +263,16 @@
             </div>
           </li>
           <li class="section-services__cover">
+            <picture>
+              <source media="(max-width: 767px)"
+              srcset="./images/mobail-sm/imgolga-sm_450.jpg 1x, ./images/mobail-sm/imgolga-sm_900.jpg 2x">
+              <source media="(min-width: 768px) and (max-width: 1199px)"
+              srcset="./images/tablet-md/imgolga-md-354.jpg 1x, ./images/tablet-md/imgolga-md-708.jpg 2x">
+              <source media="(min-width: 1200px)"
+              srcset="./images/desktop-bg/olga-bg_270.jpg 1x, ./images/desktop-bg/olga-bg_540.jpg 2x">
+
             <img class="section-services__img" src="./images/Frontend_developer.jpg" alt="Frontend-developer" width="270">
+            </picture>
             <div class="section-services__document">
             <h3 class="section-services__title">Ольга Рєпіна</h3>
             <p class="section-services__text">Frontend Developer</p>
@@ -274,7 +309,16 @@
             </div>
           </li>
           <li class="section-services__cover">
+            <picture>
+              <source media="(max-width: 767px)"
+              srcset="./images/mobail-sm/imgmukola-sm_450.jpg 1x, ./images/mobail-sm/imgmukola-sm_900.jpg 2x">
+              <source media="(min-width: 768px) and (max-width: 1199px)"
+              srcset="./images/tablet-md/imgmiha-md-354.jpg 1x, ./images/tablet-md/imgmiha-md-708.jpg 2x">
+              <source media="(min-width: 1200px)"
+              srcset="./images/desktop-bg/ruan-bg_270.jpg 1x, ./images/desktop-bg/ruan-bg_540.jpg 2x">
+
             <img class="section-services__img" src="./images/Marketing.jpg" alt="Marketing" width="270">
+            </picture>
             <div class="section-services__document">
             <h3 class="section-services__title">Микола Тарасов</h3>
             <p class="section-services__text">Marketing</p>
@@ -311,7 +355,16 @@
             </div>
           </li>
           <li class="section-services__cover">
+            <picture>
+              <source media="(max-width: 767px)"
+              srcset="./images/mobail-sm/imgmiha-sm_450.jpg 1x, ./images/mobail-sm/imgmiha-sm_900.jpg 2x">
+              <source media="(min-width: 768px) and (max-width: 1199px)"
+              srcset="./images/tablet-md/imgmihail-md-354.jpg 1x, ./images/tablet-md/imgmihail-md-708.jpg 2x">
+              <source media="(min-width: 1200px)"
+              srcset="./images/desktop-bg/miha-bg_270.jpg 1x, ./images/desktop-bg/miha-bg_540.jpg 2x">
+
             <img class="section-services__img" src="./images/UI_designer.jpg" alt="UI-designer" width="270">
+            </picture>
             <div class="section-services__document">
             <h3 class="section-services__title">Михайло Єрмаков</h3>
             <p class="section-services__text">UI Designer</p>
@@ -471,9 +524,5 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/modals.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
