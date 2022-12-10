@@ -2159,11 +2159,6 @@ textarea::placeholder {
   }
 }
 
-.section-clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 @media screen and (max-width: 767px) {
   .section-clients__list {
     display: -webkit-box;
@@ -2171,6 +2166,9 @@ textarea::placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
   }
 }
@@ -2200,7 +2198,6 @@ textarea::placeholder {
 }
 
 .section-clients__link {
-  width: 210px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2245,6 +2242,13 @@ textarea::placeholder {
   .section-clients__link:hover, .section-clients__link:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-clients__items {
+    width: calc((100% - 60px) / 2);
+    max-width: 210px;
   }
 }
 
@@ -2562,13 +2566,11 @@ section-footer__go {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 767px) {
   .last-footer {
     display: block;
     padding: 15px 16px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -2612,11 +2614,11 @@ section-footer__go {
   border-radius: 4px;
   color: var(--before-color);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .last-footer__email {
+    width: calc((100% - 60px) / 2);
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 1199px) {

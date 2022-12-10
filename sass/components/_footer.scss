@@ -237,14 +237,11 @@ section-footer__go {
 }
 
 .last-footer {
-    @media screen and (max-width: 481px) {
-        
+    @media screen and (max-width: 767px) {
         display: block;
         padding: 15px 16px;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+      }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 100%;
@@ -279,10 +276,10 @@ section-footer__go {
     }
 }
 .last-footer__email {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 2 * 30px) / 2);
         width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+        max-width: 450px;
     }
     padding-left: 16px;
     height: 50px;
